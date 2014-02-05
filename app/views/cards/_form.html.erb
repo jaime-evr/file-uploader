@@ -1,0 +1,7 @@
+<%= form_for @card do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :note %>
+  <%= f.text_area :note %><br/>
+  <%= f.submit 'Enviar' %>
+<%end%>

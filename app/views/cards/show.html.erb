@@ -1,0 +1,8 @@
+<h2><%= @card.name %></h1>
+
+<p><%= @card.note %></p>
+
+<%= link_to 'back', root_path %>
+<%= link_to 'edit', edit_card_path(@card) %>
+<%= link_to 'delete', card_path(@card), method: :delete, data: { confirm: 'Are you sure?' } %>
+
